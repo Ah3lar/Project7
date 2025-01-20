@@ -1,11 +1,11 @@
 #include "Contact.h"
+#include "College.h"
 
 int main() {
-    Contact contact1("123-456-7890", "Kyiv", "Ukraine");
-    contact1.Show();
+    Contact contact("123-456-7890", "Kyiv", "Ukraine");
+    College college(contact, "Kyiv National University");
 
-    Contact contact2;
-    contact2.Show();
+    college.Show();
 
     return 0;
 }
